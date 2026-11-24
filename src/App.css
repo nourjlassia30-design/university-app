@@ -1,0 +1,116 @@
+:root {
+  --indigo-900: #2e3a87;
+  --indigo-500: #5b5bd6;
+  --indigo-100: #e4e4fb;
+  --bg: #f3f3f9;
+  --text: #22243a;
+  --muted: #666a80;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px 16px;
+}
+.card {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(46, 58, 135, 0.12);
+}
+.card img,
+.card .avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.card .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--indigo-100);
+  color: var(--indigo-900);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.card h2 {
+  color: var(--indigo-500);
+  margin: 14px 0 12px;
+  font-size: 1.5rem;
+}
+.card p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.card p strong { color: var(--text); }
+.btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 22px;
+  background: var(--indigo-500);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn:hover,
+.btn:focus-visible { background: var(--indigo-900); outline: none; }
+.header {
+  background: var(--indigo-900);
+  color: white;
+  text-align: center;
+  padding: 28px 16px 20px;
+}
+.header h1 { margin: 0 0 6px; font-size: 1.8rem; }
+.header p { margin: 0; opacity: 0.8; font-size: 0.95rem; }
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--indigo-500);
+  padding: 10px 16px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.navbar a:hover,
+.navbar a:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+.footer {
+  background: var(--indigo-900);
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+}
+.footer p { margin: 0; opacity: 0.85; }
