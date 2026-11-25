@@ -3,7 +3,7 @@ import Footer from "./assets/components/Footer.jsx";
 import Header from "./assets/components/Header.jsx";
 import Navbar from "./assets/components/Navbar.jsx";
 import StudentCard from "./assets/components/StudentCard.jsx";
-import image from "./assets/image.jpg";
+import image from "./assets/images.jpg";
 
 const etudiants = [
   {
@@ -28,10 +28,10 @@ const etudiants = [
     ville: "Sousse",
   },
   {
-    prenom: "Mariem",
-    nom: "Khalfallah",
-    email: "mariem.khalfallah@gmail.com",
-    telephone: "+216 27 567 890",
+    prenom: "nour",
+    nom: "jlassia",
+    email: "nourjlassia30@gmail.com",
+    telephone: "+216 99999999",
     filiere: "Génie Logiciel et Systèmes d'Information",
     anneeEtude: "2ème année",
     groupe: "GLSI 2",
